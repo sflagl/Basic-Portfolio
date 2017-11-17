@@ -1,0 +1,20 @@
+.main{
+	width: 960px;
+	margin:auto;
+}
+
+.about-me{
+	width: 650px;
+}
+
+.sidebar{
+	width: 270px;
+}
+
+.name-header{
+	float: left;
+}
+
+nav{
+	float: right;
+}
