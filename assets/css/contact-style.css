@@ -33,3 +33,13 @@
     border-radius: 0;
 }
 
+.submit-button:hover{
+	background-color: #3E0CE8;
+}
+
+input:hover, textarea:hover{
+	border: 2px solid #7FFF0D;
+
+}
+
+
