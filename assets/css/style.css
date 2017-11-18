@@ -7,7 +7,7 @@ html, body {
 
 
 body{
-	background-image: url(file:///Users/samanthaflagler/Desktop/myworkspace/Basic-Portfolio/assets/images/hypnotize.png);
+	background-image: url(assets/images/hypnotize.png);
 	background-repeat: repeat;
     background-position: top left;
     background-attachment: scroll;
@@ -20,8 +20,20 @@ a{
 	color:#777777;
 }
 
+p{
+	color:#777777;
+}
+
 h1, h2 {
-	font-family: 'Georgia', Times, Times New Roman, serif;.
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color:#4aaaa5;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+.sidebar h2{
+	font-size: 25px;
 }
 
 h2{
@@ -29,9 +41,16 @@ h2{
 }
 
 .top-header{
-	height: 60px;
-	border-bottom: 2px solid #cccccc;
 	background-color: #ffffff;
+	border-bottom: 2px solid #cccccc;;
+	overflow: auto;
+
+
+}
+
+
+.top-header h1{
+	color: #ffffff;
 
 }
 
@@ -40,35 +59,60 @@ h2{
 	width: 960px;
 	margin:auto;
 	 min-height: 100%;
+	  /* Equal to height of footer */
+	  /* But also accounting for potential margin-bottom of last child */
+	  margin-bottom: -50px;
+}
 
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
+.clear{
+	clear: both;
 }
 
 
+.left{
+	float: left;
+}
 
+.left img{
+	width: 70px;
+}
+
+.right{
+	float: none;
+}
 
 .about-me{
-	width: 650px;
+	width: 550px;
 	clear: both;
 	background-color: #ffffff;
 	float: left;
-	height: 437px;
+	border: 1px solid #dddddd;
+}
+
+
+.about-me p{
+	line-height: 30px;
+}
+
+.about-me img{
+	width: 38%;
 }
 
 
 .about-me h1{
 	border-bottom: 2px solid #cccccc;
 
+
 }
 
 .sidebar{
-	width: 270px;
+	width: 250px;
 	float: right;
-	height: 185px;
 	background-color: #ffffff;
+	border: 1px solid #dddddd;
 }
+
+
 
 .name-header{
 	float: left;
@@ -82,6 +126,13 @@ nav{
 	background-color:#4aaaa5;
 } 
 
+.m-r-20{
+	margin-right: 20px;
+}
+
+.m-b-20{
+	margin-bottom: 20px;
+}
 
 .p-t-20{
 	padding-top: 20px;
@@ -89,6 +140,13 @@ nav{
 .p-b-20{
 	padding-bottom: 20px;
 }
+
+
+.p-t-40{
+	padding-top: 40px;
+}
+
+
 .p-l-20{
 	padding-left: 20px;
 }
@@ -96,16 +154,16 @@ nav{
 	padding-right: 20px;
 }
 
-footer
- {
-  height: 50px;
+.p-all-25{
+	padding: 25px;
 }
 
 footer{
-	border-top: 3px solid #4aaaa5;
+	border-top: 6px solid #4aaaa5;
 	background-color: #666666;
 	clear: both;
 	height: 62px;
 	text-align: center;
+	color:#ffffff;
 	
 }
