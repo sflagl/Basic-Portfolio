@@ -19,6 +19,10 @@ a{
 	color:#777777;
 }
 
+span{
+	color: #777777;
+}
+
 a:hover{
 	color: #E89F0C;
 }
@@ -224,4 +228,75 @@ img:hover{
 
 /*Classes*/
 
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px){
+	.main, .nav-sec{
+		width: 728px;
+	}
+
+	.about-me{
+		width: 419px;
+	}
+
+	.sidebar{
+		width: 270px;
+	}
+
+
+	.main .p-all-25, .sidebar .p-all-25{
+		box-sizing:border-box;	
+	}
+
+	.left img {
+    	width: 61px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.main .p-all-25, .sidebar .p-all-25{
+		box-sizing:border-box;	
+		width: 728px;
+	}
+
+	.sidebar{
+		margin-top:40px;
+		margin-bottom: 40px;
+	}
+
+	.main{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.nav-sec{
+		width: 642px;
+	}
+
+	.main{
+		width: 592px;
+	}
+
+	.main .p-all-25, .sidebar .p-all-25{
+		box-sizing:border-box;	
+		
+	}
+
+	.name-header, nav{
+		float: none;
+		text-align: center;
+	}
+
+	.top-header{
+		padding-bottom: 25px;
+	}
+
+	nav a{
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+}
 
