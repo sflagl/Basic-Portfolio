@@ -81,7 +81,7 @@ footer{
 
 
 .main, .nav-sec{
-	width: 960px;
+	max-width: 960px;
 	margin:auto;
 	 min-height: 100%;
 	  /* Equal to height of footer */
@@ -231,72 +231,80 @@ img:hover{
 
 /*Media Queries*/
 
+
 @media screen and (max-width: 980px){
-	.main, .nav-sec{
-		width: 728px;
+	body{
+		box-sizing: border-box;
+	}
+
+	.top-header{
+		padding-left: 25px;
+		padding-right:25px;	
 	}
 
 	.about-me{
-		width: 419px;
+		width: 50%;
 	}
 
 	.sidebar{
-		width: 270px;
+		width: 30%;
 	}
 
-
-	.main .p-all-25, .sidebar .p-all-25{
-		box-sizing:border-box;	
-	}
-
-	.left img {
-    	width: 61px;
-	}
 }
 
 @media screen and (max-width: 768px){
-	.main .p-all-25, .sidebar .p-all-25{
-		box-sizing:border-box;	
-		width: 728px;
+	body {
+		
 	}
 
-	.sidebar{
-		margin-top:40px;
-		margin-bottom: 40px;
+	.top-header {
+		padding-left: 25px;
+		padding-right:25px;	
 	}
 
-	.main{
-		padding: 0;
+	.about-me {
+		width: 93%;
+		margin-bottom:25px;
+		
+	}
+
+	.sidebar {
+		width: 93%;
+		float: none;
+		
+		overflow: hidden;
 	}
 }
 
 @media screen and (max-width: 640px){
-	.nav-sec{
-		width: 642px;
-	}
-
-	.main{
-		width: 592px;
-	}
-
-	.main .p-all-25, .sidebar .p-all-25{
-		box-sizing:border-box;	
-		
+	body{
+		box-sizing: border-box;
 	}
 
 	.name-header, nav{
-		float: none;
+		width: 100%;
 		text-align: center;
 	}
 
-	.top-header{
-		padding-bottom: 25px;
+	nav a {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 
-	nav a{
-		padding-left:20px;
-		padding-right:20px;
+	.top-header {
+		padding: 0;
 	}
 
+	.about-me {
+		width: 90%;
+		margin-bottom:25px;
+		
+	}
+
+	.sidebar {
+		width: 90%;
+		float: none;
+		margin-bottom:25px;
+		overflow: hidden;
+	}
 }
-

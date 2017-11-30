@@ -31,3 +31,24 @@
 	margin-right: 25px;
 
 }
+
+@media screen and (max-width: 980px){
+	.left{
+		float: none;
+	}
+
+	.thumbnail-holder .left{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.left{
+		float: left;
+	}
+
+	.thumbnail-holder .left{
+		width: 47.5%;
+	}
+}
